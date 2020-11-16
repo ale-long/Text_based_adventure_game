@@ -15,18 +15,25 @@ user_name = input("What is your name adventurer?\n")
 print("Greetings " + user_name)
 
 # Set character attributes 
-user_attack_power = int(input("Set your attack power\n"))
+user_attack_power = input("Set your attack power\n")
 
 # implement input check 
+while (user_attack_power.isalpha()):
+    print("invalid input, please enter a number!")
+    user_attack_power = input("Set your attack power\n")
 
-# while (user_attack_power.isalpha()):
-#     print("invalid input, please enter a number!")
-#     user_attack_power = input("Set your attack power\n")
+user_attack_power = int(user_attack_power)
 
 print("You have an attack power of " + str(user_attack_power))
 
+user_health = input("Set your hp\n")
 
-user_health = int(input("Set your hp\n"))
+# implement input check 
+while (user_health.isalpha()):
+    print("invalid input, please enter a number!")
+    user_health= input("Set your hp\n")
+
+user_health = int(user_health)
 
 print("You have " + str(user_health) + " hp")
 
