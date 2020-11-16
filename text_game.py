@@ -76,7 +76,7 @@ if (enter_dungeon_decision.lower() == 'yes'):
             
             # user enters a room and encounters a monster
             if (next_decision.lower() == 'room'):
-                print('You have encountered a monster with an attack power of 10 and 50 hp.')
+                print('You have encountered a monster with 10 attack power and 50 hp.')
                 # fight or flight?
                 fight_flight_decision = input('Your attack power is ' + str(user_attack_power) + ' and your hp is ' + str(user_health) + '. Would you like to fight or flee? Type fight or flee.\n')
                 
